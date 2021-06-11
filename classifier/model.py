@@ -1,4 +1,4 @@
-from transformers.modeling_tf_bert import TFBertPreTrainedModel, TFBertMainLayer
+from transformers.models.bert.modeling_tf_bert import TFBertPreTrainedModel, TFBertMainLayer
 from transformers.modeling_tf_utils import get_initializer
 import tensorflow as tf
 
