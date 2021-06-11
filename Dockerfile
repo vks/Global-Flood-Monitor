@@ -1,10 +1,10 @@
 FROM huggingface/transformers-tensorflow-gpu
 
-# Install additional Global Flood Monitor dependencies
-
 RUN apt-get update
-# Avoid being asked for a geographical location
+
+# Install Global Flood Monitor dependencies.
 RUN DEBIAN_FRONTEND="noninteractive" apt-get install -y \
+    postgresql \
     python3-pandas python3-elasticsearch python3-psycopg2 python3-numpy python3-dill \
     python3-twitter python3-sklearn python3-keras python3-tz python3-gdal python3-nltk \
     python3-geopy python3-xlrd
