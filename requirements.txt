@@ -13,3 +13,4 @@ gdal
 nltk
 geopy
 xlrd
+geopandas
